@@ -1,0 +1,34 @@
+# Event: LACTF
+# Problem: PWN - gatekeep
+
+## Approach
+recon, develop, execute
+
+### Programs required:
+* Radare
+* iPython3
+* Python3
+* pwntools
+
+## Recon
+First, we must recon the binary file and source code, if availible. 
+
+There are a methods to perform recon:
+1. Check security settings on the binary with the command: __checksec --file=[binary-file]__
+2. View the **strings** in the provided binary with the command: __rabin2 -z [binary-file]__
+3. View the **symbols** in the provided binary with the command: __rabin2 -s [binary-file]__
+4. Examine the assembly code of the binary with Radare: __r2 -Ad [binary-file]__
+5. If provided, examine the source code: cat [source-code-file]
+
+## Develop
+
+I use Python3, iPython3, and pwntools to craft my exploits. 
+
+### Payload
+
+
+## Execute
+
+
+
+
